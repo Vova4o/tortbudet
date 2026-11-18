@@ -14,7 +14,9 @@ RUN npm ci --no-audit --no-fund
 COPY --chown=node:node . .
 
 ARG SITE_URL=http://127.0.0.1:3001
-RUN SITE_URL="$SITE_URL" NEXT_STANDALONE=1 npm run build
+# A checkout can inherit a restrictive umask, so normalize assets before handing ownership to root.
+RUN SITE_URL="$SITE_URL" NEXT_STANDALONE=1 npm run build \
+    && chmod -R u=rwX,go=rX public .next/standalone .next/static
 
 FROM base AS runtime
 WORKDIR /app
