@@ -1,8 +1,8 @@
-import Image from "next/image";
 import { CalendarDays, CakeSlice, Clock3, Disc3, Heart, MapPin, PartyPopper, Sparkles, Wine } from "lucide-react";
 import event from "@/config/event.json";
 import { HeroHeading } from "@/components/hero-heading";
 import { Navigation } from "@/components/navigation";
+import { PartyArtwork } from "@/components/party-artwork";
 import { PartyAtmosphere } from "@/components/party-atmosphere";
 import { Rsvp } from "@/components/rsvp";
 
@@ -16,7 +16,7 @@ export default function Home() {
       <main id="main">
         <section className="party-hero" id="about" aria-label="Приглашение на день рождения">
           <div className="hero-art" aria-hidden="true">
-            <Image src="/images/party-scene.webp" alt="" fill priority sizes="100vw" quality={90} />
+            <PartyArtwork />
           </div>
           <div className="hero-shade" aria-hidden="true" />
           <PartyAtmosphere />
@@ -25,6 +25,7 @@ export default function Home() {
             <HeroHeading />
             <p className="hero-description">Будет торт, веселье, классная компания<br className="desktop-break" /> и ещё больше поводов для мемов!</p>
             <div className="mobile-party-scene" aria-hidden="true">
+              <PartyArtwork />
               <span className="mobile-legendary-sticker">БУДЕТ<br /><strong>ЛЕГЕНДАРНО!</strong></span>
             </div>
 
