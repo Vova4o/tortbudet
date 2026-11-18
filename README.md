@@ -30,7 +30,7 @@ docker --context rootless compose up -d --build
 При использовании публичного адреса передайте `SITE_URL` при сборке образа, чтобы в превью ссылки использовался этот адрес:
 
 ```bash
-SITE_URL=https://tortimemy.landingprod.ru docker --context rootless compose up -d --build
+SITE_URL=https://tortbudet.landingpros.ru docker --context rootless compose up -d --build
 ```
 
 ## Настройки приглашения
