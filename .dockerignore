@@ -1,0 +1,13 @@
+.git
+.codebase-graph
+.next
+node_modules
+out
+coverage
+*.tsbuildinfo
+*.log
+.DS_Store
+**/.env*
+**/.npmrc
+Dockerfile
+compose.yaml

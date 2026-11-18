@@ -1,0 +1,15 @@
+{
+  "title": "Мой День Рождения",
+  "description": "Будет торт, веселье, классная компания и ещё больше поводов для мемов!",
+  "date": "Сб, 15 марта",
+  "time": "с 18:00",
+  "location": "У меня дома",
+  "locationNote": "Адрес пришлю после RSVP",
+  "rsvpStorageKey": "birthday-party-rsvp-v1",
+  "maxGuests": 10,
+  "program": [
+    { "icon": "cake", "title": "Торт", "description": "много торта", "color": "yellow" },
+    { "icon": "wine", "title": "Напитки", "description": "на любой вкус", "color": "pink" },
+    { "icon": "disc", "title": "Танцы", "description": "до упаду", "color": "blue" }
+  ]
+}
